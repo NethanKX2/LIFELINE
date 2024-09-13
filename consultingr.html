@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book a consultation with top specialists at LifeLine Medicals. Choose from a variety of specialties and schedule your appointment online."
+    />
+    <title>Consultant Reservation - LifeLine Medicals</title>
+    <link rel="stylesheet" href="consultant.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="LifeLine Medicals logo" />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="consultingr.html">Consulting Reservation</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="text-box">
+        <h1>Consulting Reservation</h1>
+        <a href="#book-consultation" class="hero-btn">Book a Consultation</a>
+      </div>
+    </header>
+    <section id="book-consultation" class="booking-section">
+      <div class="container">
+        <h2>Book a Consultation</h2>
+        <div class="row">
+          <div class="course-col">
+            <h3>Consultation Process</h3>
+            <p>
+              Our expert medical consultants are available for consultations.
+              Book an appointment to receive professional advice on your health
+              concerns.
+            </p>
+          </div>
+          <div class="course-col">
+            <h3>Available Specialists</h3>
+            <p>
+              Choose from a variety of specialists including cardiologists,
+              pediatricians, surgeons, and general practitioners to address your
+              specific health needs.
+            </p>
+          </div>
+          <div class="course-col">
+            <h3>Timely Scheduling</h3>
+            <p>
+              We value your time. Our easy scheduling system ensures that you
+              get the best available time slot with minimal wait time for
+              consultations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reservation-form-section">
+      <div class="container">
+        <h2>Reservation Form</h2>
+        <p class="special-text">
+          Fill out the form below to book your consultation appointment.
+        </p>
+
+        <form class="reservation-form">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="specialty">Select Specialty:</label>
+            <select id="specialty" name="specialty" required>
+              <option value="cardiology">Cardiology</option>
+              <option value="pediatrics">Pediatrics</option>
+              <option value="surgery">Surgery</option>
+              <option value="general">General Consultation</option>
+              <option value="neurology">Neurology</option>
+              <option value="orthopedics">Orthopedics</option>
+              <option value="gynecology">Gynecology</option>
+              <option value="dermatology">Dermatology</option>
+              <option value="urology">Urology</option>
+              <option value="rheumatology">Rheumatology</option>
+              <option value="oncology">Oncology</option>
+              <option value="pulmonology">Pulmonology</option>
+              <option value="endocrinology">Endocrinology</option>
+              <option value="nephrology">Nephrology</option>
+              <option value="emergency">Emergency Medicine</option>
+              <option value="ent">Ear, Nose, and Throat</option>
+              <option value="gastroenterology">Gastroenterology</option>
+              <option value="ophthalmology">Ophthalmology</option>
+              <option value="psychiatry">Psychiatry</option>
+              <option value="pathology">Pathology</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div class="form-group">
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required />
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            LifeLine Medicals is committed to delivering quality healthcare
+            services across our multiple branches. Our team of dedicated
+            professionals ensures top-notch care for all our patients.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="consultingr.html">Consulting Reservation</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p>Email: info@lifelinemedicals.com</p>
+          <p>Phone: 0771234567</p>
+          <p>123 Main St, Colombo</p>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <ul class="social-media">
+            <li>
+              <a href="https://www.facebook.com/yourwebsite" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/yourwebsite" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yourwebsite" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 LifeLine Medicals. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

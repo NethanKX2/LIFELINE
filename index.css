@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e5e6e7ec;
+  color: #333;
+  line-height: 1.6;
+}
+s
+a {
+  text-decoration: none;
+  color: #1e90ff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(images/image.png);
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 1% 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 200px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links ul li {
+  padding: 0 20px;
+}
+
+.nav-links ul li a {
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none; 
+  transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+  color: #00bcd4;
+}
+
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: aliceblue;
+}
+
+.text-box h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #00bcd4;
+  border-color: #00bcd4;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Homepage-s2 h2,
+.section_2 h2,
+.trophies h2,
+.facilities h2,
+.medical-list h2 {
+  color: #1e90ff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section_2 p {
+  color: #555;
+  margin: 20px 0;
+  line-height: 1.6;
+  font-size: 26px;
+}
+
+.section_2 {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.image2{
+  width: 750px;
+  height: 750px;
+  align-content: center;
+  }
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.course-col,
+.trophies-col,
+.facilities-col {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.course-col:hover,
+.trophies-col:hover,
+.facilities-col:hover {
+  transform: translateY(-10px);
+}
+
+.course-col h3,
+.trophies-col h3,
+.facilities-col h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.course-col p,
+.trophies-col p,
+.facilities-col p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-content div {
+  margin: 20px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #1e90ff;
+}
+
+.footer-contact p,
+.footer-social-media h3 {
+  margin-bottom: 10px;
+}
+
+.footer-social-media ul {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-media img {
+  width: 40px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-media img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+}
+
+.footer-bottom p {
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .course-col,
+  .trophies-col,
+  .facilities-col {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}

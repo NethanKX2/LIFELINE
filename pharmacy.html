@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore our pharmacy services at LifeLine Medicals. Find a range of medications, health products, and expert advice."
+    />
+    <title>Pharmacy - LifeLine Medicals</title>
+    <link rel="stylesheet" href="pharmacy.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="LifeLine Medicals logo" />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="consultingr.html">Consulting Reservation</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="text-box">
+        <h1>LifeLine Pharmacy</h1>
+        <a href="#contact" class="hero-btn">Order your prescriptions</a>
+      </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2>Our Pharmacy Services</h2>
+        <div class="services-row">
+          <div class="service-col">
+            <h3>Prescription Medications</h3>
+            <p>
+              We offer a wide range of prescription medications for various
+              health conditions. Our pharmacists are here to assist you with
+              your prescriptions and provide expert advice.
+            </p>
+          </div>
+          <div class="service-col">
+            <h3>Over-the-Counter Products</h3>
+            <p>
+              Find over-the-counter medications and health products for everyday
+              needs. From pain relief to vitamins, we have you covered.
+            </p>
+          </div>
+          <div class="service-col">
+            <h3>Health Consultations</h3>
+            <p>
+              Our pharmacy team provides health consultations and advice to help
+              you manage your health effectively. Speak with our experts today.
+            </p>
+          </div>
+          <div class="service-col">
+            <h3>Medication Delivery</h3>
+            <p>
+              We offer a convenient medication delivery service to ensure you
+              receive your medications right at your doorstep.
+            </p>
+          </div>
+          <div class="service-col">
+            <h3>Medication Reviews</h3>
+            <p>
+              Our pharmacists provide comprehensive medication reviews to help
+              you understand your medication and its side effects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-form-section">
+      <div class="container">
+        <h2>Order your Medicine</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="medicine-type">Medicine Type:</label>
+            <select id="medicine-type" name="medicine-type" required>
+              <option value="prescription">Prescription</option>
+              <option value="over-the-counter">Over-the-Counter</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="medicine-name">Medicine Name:</label>
+            <input
+              type="text"
+              id="medicine-name"
+              name="medicine-name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required />
+          </div>
+          <div class="form-group">
+            <label for="prescription"
+              >Prescription Details (if applicable):</label
+            >
+            <textarea
+              id="prescription"
+              name="prescription"
+              rows="5"
+              placeholder="Please upload a copy of your prescription if available."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="message">Additional Notes:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Provide any additional details or instructions."
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            LifeLine Medicals is committed to delivering quality healthcare
+            services across our multiple branches. Our team of dedicated
+            professionals ensures top-notch care for all our patients.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="consultingr.html">Consulting Reservation</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p>Email: info@lifelinemedicals.com</p>
+          <p>Phone: 0771234567</p>
+          <p>123 Main St, Colombo</p>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <ul class="social-media">
+            <li>
+              <a href="https://www.facebook.com/yourwebsite" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/yourwebsite" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yourwebsite" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 LifeLine Medicals. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

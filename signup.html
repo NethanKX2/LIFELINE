@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sign in or create an account at LifeLine Medicals to access our services."
+    />
+    <title>Sign In / Sign Up - LifeLine Medicals</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon.ico" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html">
+          <img src="images/logo.png" alt="LifeLine logo" />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="consultingr.html">Consulting Reservation</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-box">
+        <h1>Sign in and sign up</h1>
+        <a href="signup.html" class="hero-btn">Sign in / sign up</a>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <div class="auth-container">
+        <div class="auth-form">
+          <div class="form-section" id="sign-in-section">
+            <h2>Sign In</h2>
+            <form>
+              <div class="form-group">
+                <label for="signin-email">Email:</label>
+                <input type="email" id="signin-email" required />
+              </div>
+              <div class="form-group">
+                <label for="signin-password">Password:</label>
+                <input type="password" id="signin-password" required />
+              </div>
+              <div class="form-group">
+                <label for="signin-remember">
+                  <input type="checkbox" id="signin-remember" />
+                  Remember Me
+                </label>
+              </div>
+              <button
+                class="button"
+                onclick="window.location.href='error.html'"
+              >
+                Sign Up
+              </button>
+            </form>
+          </div>
+          <div class="form-section" id="sign-up-section">
+            <h2>Sign Up</h2>
+            <form>
+              <div class="form-group">
+                <label for="signup-name">Full Name:</label>
+                <input type="text" id="signup-name" required />
+              </div>
+              <div class="form-group">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" required />
+              </div>
+              <div class="form-group">
+                <label for="signup-phone">Phone Number:</label>
+                <input type="tel" id="signup-phone" required />
+              </div>
+              <div class="form-group">
+                <label for="signup-address">Address:</label>
+                <input type="text" id="signup-address" required />
+              </div>
+              <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" required />
+              </div>
+              <div class="form-group">
+                <label for="signup-confirm-password">Confirm Password:</label>
+                <input type="password" id="signup-confirm-password" required />
+              </div>
+              <button
+                class="button"
+                onclick="window.location.href='error.html'"
+              >
+                Sign Up
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            LifeLine Medicals is committed to delivering quality healthcare
+            services across our multiple branches. Our team of dedicated
+            professionals ensures top-notch care for all our patients.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="consultingr.html">Consulting Reservation</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p>Email: info@lifelinemedicals.com</p>
+          <p>Phone: 0771234567</p>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <ul class="social-media">
+            <li>
+              <a href="https://www.facebook.com/yourwebsite" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/yourwebsite" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yourwebsite" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 LifeLine Medicals. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
