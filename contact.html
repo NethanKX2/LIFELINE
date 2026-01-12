@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - LifeLine Medicals</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header></header>
+
+    <div class="section" style="padding-top:120px;">
+        <div class="grid-container" style="grid-template-columns:1fr 1fr; align-items:start;">
+            <div>
+                <h2 style="font-size:2.5rem; color:var(--secondary); margin-bottom:1.5rem;">Get in Touch</h2>
+                <p style="color:var(--text-light); margin-bottom:2rem;">
+                    Have questions or need assistance? Our support team is here to help you 24/7.
+                </p>
+                
+                <div style="margin-bottom:2rem;">
+                    <div style="display:flex; gap:1rem; margin-bottom:1.5rem;">
+                        <div style="width:50px; height:50px; background:var(--primary-light); color:var(--primary); display:flex; align-items:center; justify-content:center; border-radius:50%; font-size:1.2rem;">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size:1.2rem; color:var(--secondary);">Location</h4>
+                            <p style="color:var(--text-light);">123 Health Ave, Colombo 03, Sri Lanka</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display:flex; gap:1rem; margin-bottom:1.5rem;">
+                        <div style="width:50px; height:50px; background:var(--primary-light); color:var(--primary); display:flex; align-items:center; justify-content:center; border-radius:50%; font-size:1.2rem;">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size:1.2rem; color:var(--secondary);">Phone</h4>
+                            <p style="color:var(--text-light);">+94 11 234 5678</p>
+                            <p style="color:var(--text-light);">+94 77 123 4567</p>
+                        </div>
+                    </div>
+
+                    <div style="display:flex; gap:1rem; margin-bottom:1.5rem;">
+                        <div style="width:50px; height:50px; background:var(--primary-light); color:var(--primary); display:flex; align-items:center; justify-content:center; border-radius:50%; font-size:1.2rem;">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size:1.2rem; color:var(--secondary);">Email</h4>
+                            <p style="color:var(--text-light);">info@lifeline-medicals.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container" style="margin:0; width:100%;">
+                <h3 style="margin-bottom:1.5rem; color:var(--secondary);">Send us a Message</h3>
+                <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

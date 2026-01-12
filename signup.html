@@ -1,181 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Sign in or create an account at LifeLine Medicals to access our services."
-    />
-    <title>Sign In / Sign Up - LifeLine Medicals</title>
-    <link rel="stylesheet" href="signup.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/images/favicon.ico" />
-  </head>
-  <body>
-    <section class="header">
-      <nav>
-        <a href="index.html">
-          <img src="images/logo.png" alt="LifeLine logo" />
-        </a>
-        <div class="nav-links" id="navLinks">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="doctors.html">Doctors</a></li>
-            <li><a href="consultingr.html">Consulting Reservation</a></li>
-            <li><a href="pharmacy.html">Pharmacy</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="text-box">
-        <h1>Sign in and sign up</h1>
-        <a href="signup.html" class="hero-btn">Sign in / sign up</a>
-      </div>
-    </section>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In - LifeLine Medicals</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body style="background:var(--bg-light);">
+    <header></header>
 
-    <main class="main-content">
-      <div class="auth-container">
-        <div class="auth-form">
-          <div class="form-section" id="sign-in-section">
-            <h2>Sign In</h2>
-            <form>
-              <div class="form-group">
-                <label for="signin-email">Email:</label>
-                <input type="email" id="signin-email" required />
-              </div>
-              <div class="form-group">
-                <label for="signin-password">Password:</label>
-                <input type="password" id="signin-password" required />
-              </div>
-              <div class="form-group">
-                <label for="signin-remember">
-                  <input type="checkbox" id="signin-remember" />
-                  Remember Me
-                </label>
-              </div>
-              <button
-                class="button"
-                onclick="window.location.href='error.html'"
-              >
-                Sign Up
-              </button>
-            </form>
-          </div>
-          <div class="form-section" id="sign-up-section">
-            <h2>Sign Up</h2>
-            <form>
-              <div class="form-group">
-                <label for="signup-name">Full Name:</label>
-                <input type="text" id="signup-name" required />
-              </div>
-              <div class="form-group">
-                <label for="signup-email">Email:</label>
-                <input type="email" id="signup-email" required />
-              </div>
-              <div class="form-group">
-                <label for="signup-phone">Phone Number:</label>
-                <input type="tel" id="signup-phone" required />
-              </div>
-              <div class="form-group">
-                <label for="signup-address">Address:</label>
-                <input type="text" id="signup-address" required />
-              </div>
-              <div class="form-group">
-                <label for="signup-password">Password:</label>
-                <input type="password" id="signup-password" required />
-              </div>
-              <div class="form-group">
-                <label for="signup-confirm-password">Confirm Password:</label>
-                <input type="password" id="signup-confirm-password" required />
-              </div>
-              <button
-                class="button"
-                onclick="window.location.href='error.html'"
-              >
-                Sign Up
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </main>
+    <div class="section" style="padding-top:120px; min-height:90vh; display:flex; align-items:center; justify-content:center;">
+        <div class="form-container" style="width:100%; margin:0;">
+            <div style="text-align:center; margin-bottom:2rem;">
+                <h2 style="color:var(--primary); margin-bottom:0.5rem;">Welcome Back</h2>
+                <p style="color:var(--text-light)">Access your dashboard and appointments</p>
+            </div>
 
-    <footer>
-      <div class="footer-content">
-        <div class="footer-column">
-          <h3>About Us</h3>
-          <p>
-            LifeLine Medicals is committed to delivering quality healthcare
-            services across our multiple branches. Our team of dedicated
-            professionals ensures top-notch care for all our patients.
-          </p>
+            <!-- Tabs -->
+            <div style="display:flex; margin-bottom:2rem; border-bottom:2px solid #e2e8f0;">
+                <button onclick="toggleAuth('login')" id="tab-login" style="flex:1; padding:1rem; border:none; background:none; font-weight:600; cursor:pointer; color:var(--primary); border-bottom:2px solid var(--primary); margin-bottom:-2px;">Sign In</button>
+                <button onclick="toggleAuth('signup')" id="tab-signup" style="flex:1; padding:1rem; border:none; background:none; font-weight:600; cursor:pointer; color:var(--text-light);">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="login-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" class="form-control" required placeholder="user@lifeline.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" required placeholder="user">
+                </div>
+                <button type="submit" class="cta-btn btn-block">Sign In</button>
+                <p style="text-align:center; margin-top:1rem; font-size:0.9rem; color:var(--text-light);">
+                    Demo User: user@lifeline.com | user<br>
+                    Demo Admin: admin@lifeline.com | admin
+                </p>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signup-form" style="display:none;" onsubmit="handleRegister(event)">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="cta-btn btn-block">Create Account</button>
+            </form>
         </div>
-        <div class="footer-column">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="doctors.html">Doctors</a></li>
-            <li><a href="consultingr.html">Consulting Reservation</a></li>
-            <li><a href="pharmacy.html">Pharmacy</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Contact Us</h3>
-          <p>Email: info@lifelinemedicals.com</p>
-          <p>Phone: 0771234567</p>
-        </div>
-        <div class="footer-column">
-          <h3>Follow Us</h3>
-          <ul class="social-media">
-            <li>
-              <a href="https://www.facebook.com/yourwebsite" target="_blank"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/yourwebsite" target="_blank"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/yourwebsite" target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 LifeLine Medicals. All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
+    </div>
+
+    <footer></footer>
+    <script src="assets/js/app.js"></script>
+    <script>
+        function toggleAuth(type) {
+            const loginForm = document.getElementById('login-form');
+            const signupForm = document.getElementById('signup-form');
+            const loginTab = document.getElementById('tab-login');
+            const signupTab = document.getElementById('tab-signup');
+
+            if (type === 'login') {
+                loginForm.style.display = 'block';
+                signupForm.style.display = 'none';
+                loginTab.style.color = 'var(--primary)';
+                loginTab.style.borderBottom = '2px solid var(--primary)';
+                signupTab.style.color = 'var(--text-light)';
+                signupTab.style.borderBottom = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                signupForm.style.display = 'block';
+                signupTab.style.color = 'var(--primary)';
+                signupTab.style.borderBottom = '2px solid var(--primary)';
+                loginTab.style.color = 'var(--text-light)';
+                loginTab.style.borderBottom = 'none';
+            }
+        }
+    </script>
+</body>
 </html>
